@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+    {% block body %}
+        <h1>Student ListView</h1>
+        {{students}}
+
+        {% for student in students %}
+            <div>
+                <p>
+                    Name:{{student.name}}
+                </p>
+            </div>
+        {% endfor %}
+    {% endblock %}
